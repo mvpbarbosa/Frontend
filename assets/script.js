@@ -47,26 +47,24 @@ const findByIdPost = async () => {
   console.log("Funcionando")
 
   chosenPostDiv.innerHTML = `
-  <div class="PostListItem">
-  <div class="PostListItem__Header">
-    <div class="ProfileInfo">
+  <div class="ModalItem">
+  <div class="ModalItem__Header">
+    <div class="ProfileInfo__Modal">
       <img src="${post.photo}" alt="Imagem de perfil" />
-      <div class="NameDate">
+      <div class="NameDate__Modal">
         <h3>${post.name}</h3>
         <h4>${post.dateHour}</h4>
       </div>
     </div>
-
-    <img class="Options" src="./assets/images/more-options.png" alt="Options" />
   </div>
 
-  <div class="PostListItem__Main">
+  <div class="ModalItem__Main">
     <span>
       ${post.text}
     </span>
   </div>
 
-  <div class="PostListItem__Footer">
+  <div class="ModalItem__Footer">
     <img src="https://icones.pro/wp-content/uploads/2021/04/icone-noire-noir.png" alt="Like" />
   </div>
   </div>`;

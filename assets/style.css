@@ -1,3 +1,7 @@
+/* ============================================== */
+/* =================== Global =================== */
+/* ============================================== */
+
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
 * {
@@ -30,6 +34,10 @@ body {
   border-radius: 10px;
 }
 
+/* ================================================== */
+/* ===================== NavBar ===================== */
+/* ================================================== */
+
 .Navbar {
   margin-top: -8rem;
   position: fixed;
@@ -48,14 +56,14 @@ body {
 }
 
 .LogoImg {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
 .Title {
   color: white;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .SearchPost {
@@ -75,8 +83,8 @@ body {
 }
 
 .LupaIcon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .SearchBar {
@@ -85,7 +93,7 @@ body {
   background-color: rgba(0, 0, 0, 0.262);
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 12px;
   transform: scaleX(0);
   transition: all ease-in-out 0.2s;
   transform-origin: right;
@@ -97,6 +105,10 @@ body {
   transform: scaleX(1);
   transform-origin: right;
 }
+
+/* ============================================ */
+/* =================== Home =================== */
+/* ============================================ */
 
 .HomeContainer {
   padding: 0 10rem;
@@ -110,7 +122,7 @@ body {
   width: 50%;
   margin: 2rem auto;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.146);
+  background-color: #c359ed;
   padding: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -118,8 +130,8 @@ body {
 }
 
 .ProfileIcon {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
@@ -131,7 +143,7 @@ body {
   font-size: 15px;
   height: 25px;
   max-height: none;
-  width: 88%;
+  width: 90%;
   cursor: pointer;
   transition: ease-in-out all 0.2s;
   align-items: center;
@@ -139,7 +151,6 @@ body {
 
 .FakeInput:hover {
   background-color: rgba(255, 255, 255, 0.269);
-
 }
 
 .PostListItem {
@@ -166,8 +177,8 @@ body {
 }
 
 .ProfileInfo img {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
@@ -176,17 +187,18 @@ body {
 }
 
 .NameDate h3 {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 
 .NameDate h4 {
-  margin-top: -7px;
-  font-size: 12px;
+  margin-top: -6px;
+  font-size: 10px;
   color: #575757;
 }
 
 .Options {
+  margin-right: 5px;
   width: 15px;
   height: 15px;
 }
@@ -196,7 +208,7 @@ body {
   font-weight: 400;
   margin-top: 1.5%;
   padding: 0 3%;
-  font-size: 20px;  
+  font-size: 17px;
 }
 
 .PostListItem__Footer {
@@ -206,9 +218,13 @@ body {
 }
 
 .PostListItem__Footer img {
-  width: 35px;
-  height: 37px;
+  width: 30px;
+  height: 32px;
 }
+
+/* ================================================= */
+/* ===================== Modal ===================== */
+/* ================================================= */
 
 .ModalOverlay {
   background-color: #00000050;
@@ -247,4 +263,71 @@ body {
 
 .CloseModal:hover {
   transform: scale(1);
+}
+
+/* ================================================= */
+/* =================== ModalItem =================== */
+/* ================================================= */
+
+.ModalItem {
+  border: solid 3px #a200ff;
+  border-radius: 3rem;
+  min-width: 700px;
+  width: 50%;
+  margin: 2rem auto;
+  height: auto;
+  background-color: #c359ed;
+  padding: 1.2rem;
+  font-size: 15px;
+}
+
+.ModalItem__Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ProfileInfo__Modal {
+  display: flex;
+  align-items: center;
+}
+
+.ProfileInfo__Modal img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.NameDate__Modal {
+  margin-left: 8px;
+}
+
+.NameDate__Modal h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.NameDate__Modal h4 {
+  margin-top: -7px;
+  font-size: 10px;
+  color: #575757;
+}
+
+.ModalItem__Main {
+  font-family: Arial;
+  font-weight: 400;
+  margin-top: 1.5%;
+  padding: 0 3%;
+  font-size: 25px;
+}
+
+.ModalItem__Footer {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: end;
+}
+
+.ModalItem__Footer img {
+  width: 30px;
+  height: 32px;
 }
