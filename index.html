@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FriendsZone</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="Home">
+      <div class="Navbar">
+        <div class="LogoTitle">
+          <img
+            class="LogoImg"
+            src="https://media.istockphoto.com/vectors/shaking-hands-on-business-in-red-heart-shape-symbol-of-success-deal-vector-id1072001206"
+            alt="FriendsZone Logo"
+          />
+          <h1 class="Title">FriendsZone</h1>
+        </div>
+
+        <div class="SearchPost">
+          <input
+            id="postId"
+            class="SearchBar"
+            type="number"
+            placeholder="Pesquise uma publicação"
+          />
+          <button
+            class="SearchButton"
+            id="postIdButton"
+            onclick="findByIdPost(), openModal()"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/2469/PNG/512/magnifier_magnifying_glass_icon_149435.png"
+              alt="Ícone de lupa"
+              class="LupaIcon"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="HomeContainer">
+        <section class="ModalOverlay" id="Overlay" onclick="closeModal()">
+          <div id="OpenModal" class="Modal">
+          </div>
+        </section>
+
+
+        <div class="CreatePost">
+          <img
+            class="ProfileIcon"
+            src="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+            alt="Imagem de perfil"
+          />
+          <div class="FakeInput">
+            <span>Digite um texto</span>
+          </div>
+        </div>
+
+        <section class="PostList"></section>
+      </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

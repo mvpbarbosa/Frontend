@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Exo, sans-serif;
+}
+
+/* * {border: #c3c3c3 1px dotted} */
+
+body {
+  background-image: linear-gradient(
+    to top right,
+    #450a5c,
+    #b638e8,
+    #d791f3 110%
+  );
+  position: inherit;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  background-color: #581176cb;
+  width: 20px;
+  height: 100px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #543a5e;
+  border-radius: 10px;
+}
+
+.Navbar {
+  margin-top: -8rem;
+  position: fixed;
+  background-color: #8734a8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px #00000028;
+  padding: 0.6rem;
+  width: 99%;
+}
+
+.LogoTitle {
+  display: flex;
+  align-items: center;
+}
+
+.LogoImg {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.Title {
+  color: white;
+  font-size: 50px;
+}
+
+.SearchPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchButton {
+  background: none;
+  border: none;
+  height: 30px;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  max-width: 30px;
+  margin: 8px;
+}
+
+.LupaIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.SearchBar {
+  min-width: 158px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.262);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transform: scaleX(0);
+  transition: all ease-in-out 0.2s;
+  transform-origin: right;
+  padding: 0.6rem;
+  padding-left: -5px;
+}
+
+.SearchPost:hover .SearchBar {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.HomeContainer {
+  padding: 0 10rem;
+  margin-top: 8rem;
+}
+
+.CreatePost {
+  border: solid 3px #a200ff;
+  border-radius: 2rem;
+  min-width: 742px;
+  width: 50%;
+  margin: 2rem auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.146);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProfileIcon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.FakeInput {
+  background-color: rgba(255, 255, 255, 0.146);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem;
+  font-size: 15px;
+  height: 25px;
+  max-height: none;
+  width: 88%;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+  align-items: center;
+}
+
+.FakeInput:hover {
+  background-color: rgba(255, 255, 255, 0.269);
+
+}
+
+.PostListItem {
+  border: solid 3px #a200ff;
+  border-radius: 3rem;
+  min-width: 742px;
+  width: 50%;
+  margin: 2rem auto;
+  height: auto;
+  background-color: #c359ed;
+  padding: 1.2rem;
+  font-size: 15px;
+}
+
+.PostListItem__Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ProfileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.ProfileInfo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.NameDate {
+  margin-left: 5px;
+}
+
+.NameDate h3 {
+  font-size: 25px;
+  color: white;
+}
+
+.NameDate h4 {
+  margin-top: -7px;
+  font-size: 12px;
+  color: #575757;
+}
+
+.Options {
+  width: 15px;
+  height: 15px;
+}
+
+.PostListItem__Main {
+  font-family: Arial;
+  font-weight: 400;
+  margin-top: 1.5%;
+  padding: 0 3%;
+  font-size: 20px;  
+}
+
+.PostListItem__Footer {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: end;
+}
+
+.PostListItem__Footer img {
+  width: 35px;
+  height: 37px;
+}
+
+.ModalOverlay {
+  background-color: #00000050;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.Modal {
+  margin: 1rem;
+  width: auto;
+  height: auto;
+  min-height: 300px;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.CloseModal {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.CloseModal:hover {
+  transform: scale(1);
+}
