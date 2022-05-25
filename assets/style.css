@@ -26,8 +26,7 @@ body {
 
 ::-webkit-scrollbar {
   background-color: #581176cb;
-  width: 20px;
-  height: 100px;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #543a5e;
@@ -112,7 +111,7 @@ body {
 
 .HomeContainer {
   padding: 0 10rem;
-  margin-top: 8rem;
+  margin-top: 8rem; 
 }
 
 .CreatePost {
@@ -330,4 +329,120 @@ body {
 .ModalItem__Footer img {
   width: 30px;
   height: 32px;
+}
+
+.CreateModalOverlay {
+  background-color: #00000050;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.CreateModalItem {
+  margin: 1rem;
+  width: 450px;
+  height: auto;
+  min-height: 300px;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #d791f3;
+  justify-content: center;
+}
+
+.CloseCreateModal {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.CloseModal:hover {
+  transform: scale(1);
+}
+
+.CreateModalHeader {
+  align-items: center;
+  color: white;
+  max-height: 30px;
+  width: 100%;
+  padding: 10px;
+  background-color: #450a5c;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CreateModalHeader a {
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #733a8a;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  transform: rotate(495deg);
+  font-weight: 200;
+}
+
+.CreateModalMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.CreateModalMain input {
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  font-size: 14px;
+  padding: 3px;
+  margin: 5px 0;
+  background-color: #e3b9f3;
+}
+
+.CreateModalMain textarea {
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+  font-size: 14px;
+  padding: 3px;
+  margin: 5px;
+  background-color: #e3b9f3;
+  resize: none;
+}
+
+.CreateModalFooter button{
+  align-items: center;
+  border: solid 3px #450a5c;
+  border-radius: 10px;
+  width: 200px;
+  height: 35px;
+  font-size: 14px;
+  padding: 3px;
+  margin: 5px;
+  background-color: #e3b9f3;
+  color: #450a5c;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+  font-weight: 600;
+}
+
+.CreateModalFooter button:hover {
+  background-color: #450a5c;
+  color: white;
 }

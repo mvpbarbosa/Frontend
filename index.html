@@ -13,7 +13,7 @@
         <div class="LogoTitle">
           <img
             class="LogoImg"
-            src="https://media.istockphoto.com/vectors/shaking-hands-on-business-in-red-heart-shape-symbol-of-success-deal-vector-id1072001206"
+            src="./assets/images/friendszone-logo.jpg"
             alt="FriendsZone Logo"
           />
           <h1 class="Title">FriendsZone</h1>
@@ -24,7 +24,7 @@
             id="postId"
             class="SearchBar"
             type="number"
-            placeholder="Pesquise uma publicação"
+            placeholder="Search for a publication"
           />
           <button
             class="SearchButton"
@@ -32,7 +32,7 @@
             onclick="findByIdPost(), openModal()"
           >
             <img
-              src="https://cdn.icon-icons.com/icons2/2469/PNG/512/magnifier_magnifying_glass_icon_149435.png"
+              src="./assets/images/lupa-icon.png"
               alt="Ícone de lupa"
               class="LupaIcon"
             />
@@ -41,26 +41,47 @@
       </div>
 
       <div class="HomeContainer">
-        <section class="ModalOverlay" id="Overlay" onclick="closeModal()">
-          <div id="OpenModal" class="Modal">
+        <section class="CreateModalOverlay" id="CreateOverlay" >
+
+         <div class="CreateModalItem">
+          <div class="CreateModalHeader">
+            <h2>Create new post</h2>
+            <a onclick="closeCreateModal()" class="CloseModal">+</a>
+          </div>
+
+          <div class="CreateModalMain">
+            <input type="text" id="photo" name="photo" placeholder="Link da foto de perfil">
+            <input type="text" id="name" name="name" placeholder="Nome de usuário">
+            <input type="hidden" id="dateHour" name="dateHour">
+            <textarea type="text" id="text" name="text" placeholder="Digite um texto" rows="5"></textarea>
+          </div>
+
+          <div class="CreateModalFooter">
+          <button onclick="createPost()">Create</button>
+          </div>
+         </div>
           </div>
         </section>
 
+        <section class="ModalOverlay" id="Overlay" onclick="closeModal()">
+          <div id="OpenModal" class="Modal">
+        </section>
 
         <div class="CreatePost">
           <img
             class="ProfileIcon"
-            src="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+            src="./assets/images/profile-icon.png"
             alt="Imagem de perfil"
           />
-          <div class="FakeInput">
-            <span>Digite um texto</span>
+          <div class="FakeInput" onclick="openCreateModal()">
+            <span>Type text</span>
           </div>
         </div>
 
         <section class="PostList"></section>
       </div>
     </div>
+
 
     <script src="./assets/script.js"></script>
   </body>
